@@ -225,6 +225,106 @@ const uni_markers = [
     name: "University of Paderborn",
     cords: [51.712000, 8.748000],
     wikipedia_url: "https://en.wikipedia.org/wiki/University_of_Paderborn"
+  },
+  {
+    name: "University of Jena",
+    cords: [50.929400, 11.588600],
+    wikipedia_url: "https://en.wikipedia.org/wiki/University_of_Jena"
+  },
+  {
+    name: "University of Kiel",
+    cords: [54.323300, 10.134700],
+    wikipedia_url: "https://en.wikipedia.org/wiki/University_of_Kiel"
+  },
+  {
+    name: "University of Magdeburg",
+    cords: [52.120200, 11.627400],
+    wikipedia_url: "https://en.wikipedia.org/wiki/Otto_von_Guericke_University_Magdeburg"
+  },
+  {
+    name: "University of Augsburg",
+    cords: [48.550300, 10.896300],
+    wikipedia_url: "https://en.wikipedia.org/wiki/University_of_Augsburg"
+  },
+  {
+    name: "University of Passau",
+    cords: [48.573400, 13.463800],
+    wikipedia_url: "https://en.wikipedia.org/wiki/University_of_Passau"
+  },
+  {
+    name: "University of Hohenheim",
+    cords: [48.710600, 9.133200],
+    wikipedia_url: "https://en.wikipedia.org/wiki/University_of_Hohenheim"
+  },
+  {
+    name: "University of Applied Sciences Berlin",
+    cords: [52.525300, 13.425700],
+    wikipedia_url: "https://en.wikipedia.org/wiki/HTW_Berlin"
+  },
+  {
+    name: "University of Applied Sciences Munich",
+    cords: [48.134200, 11.577800],
+    wikipedia_url: "https://en.wikipedia.org/wiki/University_of_Applied_Sciences_Munich"
+  },
+  {
+    name: "University of Applied Sciences Karlsruhe",
+    cords: [48.990000, 8.399000],
+    wikipedia_url: "https://en.wikipedia.org/wiki/University_of_Applied_Sciences_Karlsruhe"
+  },
+  {
+    name: "University of Applied Sciences Dortmund",
+    cords: [51.508500, 7.466200],
+    wikipedia_url: "https://en.wikipedia.org/wiki/University_of_Applied_Sciences_Dortmund"
+  },
+  {
+    name: "University of Mannheim",
+    cords: [49.487459, 8.466039],
+    wikipedia_url: "https://en.wikipedia.org/wiki/University_of_Mannheim"
+  },
+  {
+    name: "University of Bonn",
+    cords: [50.734400, 7.098200],
+    wikipedia_url: "https://en.wikipedia.org/wiki/University_of_Bonn"
+  },
+  {
+    name: "University of Erlangen-Nuremberg",
+    cords: [49.590200, 11.006200],
+    wikipedia_url: "https://en.wikipedia.org/wiki/University_of_Erlangen-Nuremberg"
+  },
+  {
+    name: "University of Frankfurt",
+    cords: [50.110924, 8.682127],
+    wikipedia_url: "https://en.wikipedia.org/wiki/Goethe_University_Frankfurt"
+  },
+  {
+    name: "University of Bochum",
+    cords: [51.447300, 7.216100],
+    wikipedia_url: "https://en.wikipedia.org/wiki/Ruhr_University_Bochum"
+  },
+  {
+    name: "University of Oldenburg",
+    cords: [53.143200, 8.214300],
+    wikipedia_url: "https://en.wikipedia.org/wiki/University_of_Oldenburg"
+  },
+  {
+    name: "University of Wuppertal",
+    cords: [51.227700, 7.148800],
+    wikipedia_url: "https://en.wikipedia.org/wiki/Bergische_Universität_Wuppertal"
+  },
+  {
+    name: "University of Regensburg",
+    cords: [49.013200, 12.098600],
+    wikipedia_url: "https://en.wikipedia.org/wiki/University_of_Regensburg"
+  },
+  {
+    name: "University of Bremen",
+    cords: [53.075400, 8.807800],
+    wikipedia_url: "https://en.wikipedia.org/wiki/University_of_Bremen"
+  },
+  {
+    name: "University of Flensburg",
+    cords: [54.783100, 9.442500],
+    wikipedia_url: "https://en.wikipedia.org/wiki/Flensburg_University_of_Applied_Sciences"
   }
 ];
 
