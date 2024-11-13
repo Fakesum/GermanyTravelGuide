@@ -466,7 +466,7 @@ function App() {
   return (
     <div className="App">
       <Helmet>
-        <title>Weather App</title>
+        <title>German Travel Site</title>
         <script src="https://cdn.tailwindcss.com"></script>
       </Helmet>
       <MapContainer center={center} zoom={zoom} maxBounds={bounds} minZoom={zoom} maxZoom={zoom}>
