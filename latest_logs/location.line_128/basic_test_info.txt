@@ -1,0 +1,15 @@
+location.py:128:SB
+--------------------------------------------------------------------
+Last Page: https://www.google.com/search?q=delhi
+ Duration: 188.20s
+  Browser: Chrome 131.0.6778.85
+   Driver: chromedriver 131.0.6778.69
+Timestamp: 1732185811  (Unix Timestamp)
+     Date: Thursday, 21 November 2024
+     Time: 4:13:31 PM  (India Standard Time, UTC+05:30)
+--------------------------------------------------------------------
+Traceback:
+  File "D:\playground\germanTravelSite\location.py", line 129, in <module>
+    location_rating_system.__del__()
+    ^^^
+Exception: 

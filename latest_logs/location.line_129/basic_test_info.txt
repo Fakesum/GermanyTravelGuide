@@ -1,0 +1,15 @@
+location.py:129:SB
+--------------------------------------------------------------------
+Last Page: https://www.google.com/search?q=delhi
+ Duration: 83.34s
+  Browser: Chrome 131.0.6778.85
+   Driver: chromedriver 131.0.6778.69
+Timestamp: 1732185903  (Unix Timestamp)
+     Date: Thursday, 21 November 2024
+     Time: 4:15:03 PM  (India Standard Time, UTC+05:30)
+--------------------------------------------------------------------
+Traceback:
+  File "D:\playground\germanTravelSite\location.py", line 130, in <module>
+    def deler():
+    ^^^^^^^
+Exception: 
