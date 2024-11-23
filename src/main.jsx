@@ -9,8 +9,8 @@ import './index.css'
 createRoot(document.getElementById('root')).render(
     <BrowserRouter>
         <Routes>
-https://germanytravelguide.netlify.app/marker-icon-2x.png
             <Route path="/" element={<App />}/>
+            <Route path="/video" element={<TravelVideo />}/>
         </Routes>
     </BrowserRouter>
 )

@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet"
 import { Plane } from "lucide-react"
-
 export default ()=>{
     return (
         <header className="bg-primary text-primary-foreground">
@@ -14,6 +13,7 @@ export default ()=>{
         </a>
         <nav className="hidden md:flex space-x-4">
             <a href="/" className="hover:underline">Startseite</a>
+            <a href="/video" className="hover:underline">Deutsches Reisevideo</a>
         </nav>
         </div>
         </header>
