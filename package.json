@@ -27,6 +27,7 @@
     "vite-plugin-static-copy": "^1.0.6"
   },
   "devDependencies": {
+    "@darkobits/vite-plugin-favicons": "^0.3.2",
     "@eslint/js": "^9.9.0",
     "@types/node": "^22.9.0",
     "@types/react": "^18.3.3",
