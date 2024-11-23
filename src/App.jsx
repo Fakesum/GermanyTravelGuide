@@ -49,7 +49,7 @@ export default function DeutscheReisen() {
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-8 text-center m-7">Beliebte Reiseziele</h2>
             <Map/>
-            <h2 className="text-3xl font-bold mb-8 text-center m-7">Städte</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center m-7" id="cities">Städte</h2>
             <p className="text-2l mb-8 text-center mt-28 mb-28">Traveling to cities in Germany offers a rich tapestry of benefits, including an immersive cultural experience marked by world-class museums, theaters, and historical landmarks that reflect the country’s profound heritage. Visitors can indulge in diverse culinary delights, from traditional sausages to regional beers, while participating in vibrant festivals like Oktoberfest that celebrate local traditions. The efficient public transportation system makes it easy to navigate between cities and explore the stunning landscapes that surround urban areas. Additionally, Germany's central location in Europe provides an excellent base for further travel, allowing tourists to easily venture into neighboring countries. With friendly locals and a blend of modernity and history, a trip to Germany’s cities promises unforgettable experiences and lasting memories.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {locations.map((location) => (
@@ -81,8 +81,8 @@ export default function DeutscheReisen() {
                 </Card>
               ))}
             </div>
-            <h2 className="text-3xl font-bold mb-8 text-center m-7">Interessante Orte zu besuchen.</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <h2 className="text-3xl font-bold mb-8 text-center m-7" id="locations">Interessante Orte zu besuchen.</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" >
               {interesting_places.map((location) => (
                 <Card key={`interesting-${location.name}`}>
                   <CardHeader>
@@ -90,7 +90,7 @@ export default function DeutscheReisen() {
                   </CardHeader>
                   <CardContent>
                     <MapContainer
-                      center={[location.cords[0], location.cords[1]+0.09]}
+                      center={[location.cords[0], location.cords[1]+0.065]}
                       zoom={13}
                       style={{ height: '200px', borderRadius: '0.5rem' }}
                     >
@@ -112,7 +112,7 @@ export default function DeutscheReisen() {
                 </Card>
               ))}
             </div>
-            <h2 className="text-3xl font-bold mb-8 text-center m-7">Universität.</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center m-7" id="universities">Universität.</h2>
             <p className="text-2l mb-8 text-center mt-28 mb-28">Germany is home to a diverse array of universities renowned for their academic excellence, research opportunities, and innovative programs. With a strong emphasis on engineering, technology, and the sciences, institutions such as the Technical University of Munich, RWTH Aachen University, and the University of Heidelberg consistently rank among the top in global university rankings. Many universities offer programs in English, attracting international students and fostering a multicultural environment. Additionally, Germany’s commitment to providing tuition-free or low-cost education for both domestic and international students makes it an attractive destination for higher learning. Beyond academics, German universities often emphasize practical experience through internships and collaborations with industries, equipping students with the skills needed for successful careers in a global job market. The vibrant student life, combined with Germany's rich cultural heritage and strong economy, further enhances the appeal of studying in this dynamic country.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {uni_markers.map((location) => (
@@ -122,7 +122,7 @@ export default function DeutscheReisen() {
                   </CardHeader>
                   <CardContent>
                     <MapContainer
-                      center={[location.cords[0], location.cords[1]+0.09]}
+                      center={[location.cords[0], location.cords[1]+0.065]}
                       zoom={13}
                       style={{ height: '200px', borderRadius: '0.5rem' }}
                     >
