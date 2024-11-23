@@ -59,7 +59,7 @@ export default function DeutscheReisen() {
                   </CardHeader>
                   <CardContent>
                     <MapContainer
-                      center={[location.latitude, location.longitude+0.09]}
+                      center={[location.latitude, location.longitude+0.065]}
                       zoom={13}
                       style={{ height: '200px', borderRadius: '0.5rem' }}
                     >
