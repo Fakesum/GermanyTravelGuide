@@ -7,29 +7,98 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import Map from './map'
 import { interesting_places, uni_markers } from './map'
 import Footer from './footer'
+import SafetyMetricsDisplay from './SafetyMetricsDisplay';
 
 export default function DeutscheReisen() {
   const locations = [
-    { city: 'Berlin', latitude: 52.52, longitude: 13.405 },
-    { city: 'München', latitude: 48.1351, longitude: 11.5820 },
-    { city: 'Hamburg', latitude: 53.5511, longitude: 9.9937 },
-    { city: 'Köln', latitude: 50.9375, longitude: 6.9603 },
-    { city: 'Frankfurt', latitude: 50.1109, longitude: 8.6821 },
-    { city: 'Stuttgart', latitude: 48.7758, longitude: 9.1829 },
-    { city: 'Düsseldorf', latitude: 51.2277, longitude: 6.7735 },
-    { city: 'Dortmund', latitude: 51.5136, longitude: 7.4653 },
-    { city: 'Essen', latitude: 51.4566, longitude: 7.0116 },
-    { city: 'Leipzig', latitude: 51.3397, longitude: 12.3731 },
-    { city: 'Bremen', latitude: 53.0793, longitude: 8.8017 },
-    // { city: 'Dresden', latitude: 51.0509, longitude: 13.7383 },
-    // { city: 'Hannover', latitude: 52.3759, longitude: 9.7320 },
-    // { city: 'Nürnberg', latitude: 49.4521, longitude: 11.0767 },
-    // { city: 'Mannheim', latitude: 49.4875, longitude: 8.4660 },
-    // { city: 'Karlsruhe', latitude: 49.0069, longitude: 8.4037 },
-    // { city: 'Freiburg', latitude: 47.9990, longitude: 7.8421 },
-    // { city: 'Augsburg', latitude: 48.4011, longitude: 10.8984 },
-    // { city: 'Wiesbaden', latitude: 50.0822, longitude: 8.2493 },
-    // { city: 'Gelsenkirchen', latitude: 51.5177, longitude: 7.0812 },
+    {
+      city: 'Berlin',
+      latitude: 52.52,
+      longitude: 13.405,
+      safetyScore: 7.5, // out of 10
+      populationDensity: 4045, // people per square kilometer
+      perCapitaIncome: 40000 // in USD
+    },
+    {
+      city: 'München',
+      latitude: 48.1351,
+      longitude: 11.5820,
+      safetyScore: 8.0,
+      populationDensity: 4800,
+      perCapitaIncome: 45000
+    },
+    {
+      city: 'Hamburg',
+      latitude: 53.5511,
+      longitude: 9.9937,
+      safetyScore: 7.0,
+      populationDensity: 2400,
+      perCapitaIncome: 42000
+    },
+    {
+      city: 'Köln',
+      latitude: 50.9375,
+      longitude: 6.9603,
+      safetyScore: 7.2,
+      populationDensity: 4000,
+      perCapitaIncome: 41000
+    },
+    {
+      city: 'Frankfurt',
+      latitude: 50.1109,
+      longitude: 8.6821,
+      safetyScore: 7.8,
+      populationDensity: 3000,
+      perCapitaIncome: 48000
+    },
+    {
+      city: 'Stuttgart',
+      latitude: 48.7758,
+      longitude: 9.1829,
+      safetyScore: 7.6,
+      populationDensity: 2900,
+      perCapitaIncome: 47000
+    },
+    {
+      city: 'Düsseldorf',
+      latitude: 51.2277,
+      longitude: 6.7735,
+      safetyScore: 7.4,
+      populationDensity: 3200,
+      perCapitaIncome: 44000
+    },
+    {
+      city: 'Dortmund',
+      latitude: 51.5136,
+      longitude: 7.4653,
+      safetyScore: 6.5,
+      populationDensity: 2800,
+      perCapitaIncome: 39000
+    },
+    {
+      city: 'Essen',
+      latitude: 51.4566,
+      longitude: 7.0116,
+      safetyScore: 6.8,
+      populationDensity: 2200,
+      perCapitaIncome: 37000
+    },
+    {
+      city: 'Leipzig',
+      latitude: 51.3397,
+      longitude: 12.3731,
+      safetyScore: 7.1,
+      populationDensity: 3000,
+      perCapitaIncome: 38000
+    },
+    {
+      city: 'Bremen',
+      latitude: 53.0793,
+      longitude: 8.8017,
+      safetyScore: 7.3,
+      populationDensity: 1800,
+      perCapitaIncome: 36000
+    }
   ];
 
   return (
@@ -73,10 +142,13 @@ export default function DeutscheReisen() {
                     </MapContainer>
                   </CardContent>
                   <CardFooter className="flex justify-between">
-                    <div className="flex items-center">
-                      <MapPin className="h-4 w-4 mr-1" />
-                      <span className="text-sm">Deutschland</span>
-                    </div>
+                  <div className="flex items-center justify-center bg-gray-100 p-2">
+                    <SafetyMetricsDisplay
+                      safetyScore={location.safetyScore*10}
+                      populationDensity={location.populationDensity}
+                      perCapitaIncome={location.perCapitaIncome}
+                    />
+                  </div>
                   </CardFooter>
                 </Card>
               ))}
@@ -103,12 +175,6 @@ export default function DeutscheReisen() {
                       </Marker>
                     </MapContainer>
                   </CardContent>
-                  <CardFooter className="flex justify-between">
-                    <div className="flex items-center">
-                      <MapPin className="h-4 w-4 mr-1" />
-                      <span className="text-sm">Deutschland</span>
-                    </div>
-                  </CardFooter>
                 </Card>
               ))}
             </div>
@@ -135,8 +201,6 @@ export default function DeutscheReisen() {
                       </Marker>
                     </MapContainer>
                   </CardContent>
-                  <CardFooter className="flex justify-between">
-                  </CardFooter>
                 </Card>
               ))}
             </div>
