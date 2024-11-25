@@ -19,7 +19,7 @@ export default ()=>{
 }}>Städte</a>
             <a href="#locations" className="hover:underline" onClick={()=>{document.getElementById("locations").scrollIntoView({behavior: 'smooth'})
 }}>Standorte</a>
-            {/* <a href="/video" className="hover:underline">Deutsches Reisevideo</a> */}
+            <a href="/video" className="hover:underline">Deutsches Reisevideo</a>
         </nav>
         </div>
         </header>
