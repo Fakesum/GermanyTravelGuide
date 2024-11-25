@@ -10,7 +10,11 @@ export default function () {
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Deutsches Reisevideo</h1>
             <div style={{justifyContent:"center", width:"100%", height:"100%", display:'flex'}}>
-                <iframe width="513" height="315" src="https://youtube.com/embed/ocmfJ2NNKkE"></iframe>
+                <iframe width="513" height="315" allowfullscreen="allowfullscreen"
+        mozallowfullscreen="mozallowfullscreen" 
+        msallowfullscreen="msallowfullscreen" 
+        oallowfullscreen="oallowfullscreen" 
+        webkitallowfullscreen="webkitallowfullscreen" src="https://youtube.com/embed/ocmfJ2NNKkE"></iframe>
             </div>
           </div>
         </section>
