@@ -14,7 +14,7 @@ export default function () {
         mozallowfullscreen="mozallowfullscreen" 
         msallowfullscreen="msallowfullscreen" 
         oallowfullscreen="oallowfullscreen" 
-        webkitallowfullscreen="webkitallowfullscreen" src="https://youtube.com/embed/ocmfJ2NNKkE"></iframe>
+        webkitallowfullscreen="webkitallowfullscreen" src="https://youtube.com/embed/6sx0kIIWvwo"></iframe>
             </div>
           </div>
         </section>
